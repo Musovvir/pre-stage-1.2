@@ -1,0 +1,31 @@
+.copyright {
+  text-align: center;
+  margin: 50px 0 50px 0;
+  display: inline-block;
+}
+
+.in, .facebook {
+  display: inline-block;
+  margin:50px 0 0 30px;
+  text-align: center;
+  color: dodgerblue;
+}
+
+.heart {
+  color: red;
+  margin: 0 3px;
+}
+
+@media only screen and (max-width: 400px) {
+  .copyright {
+    margin: 20px 0 20px 0;
+  }
+
+  .in, .facebook {
+    margin:20px 0 0 30px;
+    display: flex;
+  }
+  .col-2 {
+    display: flex;
+  }
+}

@@ -1,0 +1,30 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 99;
+  padding: 15px 0 15px 0;
+  box-shadow: 0 4px 5px -5px rgba(66, 133, 56, 0.4);;
+}
+
+.logoImg {
+  width: 130px;
+  height: 22px;
+  background-size: 100%;
+  background-position: center;
+  margin-top: 10px;
+}
+
+.links {
+  color: black;
+}
+
+.links:hover {
+  color: dodgerblue;
+}
+
+@media only screen and (max-width: 400px) {
+  .my-link {
+    display: none;
+  }
+}

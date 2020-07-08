@@ -1,0 +1,75 @@
+.section-fourth {
+  background-color: #f8f9fa;
+  padding: 30px 0 100px 0;
+}
+
+.title {
+  font-size: 2.7em;
+  font-family: "Nunito", sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.image {
+  margin-top: 20px;
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+.my-block {
+  margin-left: 100px;
+}
+
+.text {
+  margin: 15px 0 40px 0;
+  opacity: 0.6;
+}
+
+.bt:not(:disabled) {
+  height: 50px;
+  width: 150px;
+  border-radius: 30px;
+  border: none;
+  background-color: #4285f4;
+  color: white;
+  box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+  text-decoration: inherit;
+  outline: none;
+}
+
+.bt:hover {
+  box-shadow: 0 0 30px 0 rgba(66, 133, 244, 0.4);
+  margin-top: -2px;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 400px) {
+  .section-fourth {
+    background-color: #f8f9fa;
+    padding: 30px 0 100px 0;
+    margin-top: 100px;
+  }
+
+  .title {
+    font-size: 2.2em;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    margin: 50px 0 50px 0;
+  }
+
+  .image {
+    margin-top: 0;
+    width: 370px;
+    height: 370px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+
+  .my-block {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,113 @@
+.my-block {
+  margin: 40px 0 60px 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.8em;
+  font-family: "Nunito", sans-serif;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 1.4em;
+  opacity: 0.6;
+}
+
+.my-icon {
+  position: absolute;
+  top: -10px;
+  left: 250px;
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  text-align: center;
+  line-height: 75px;
+  border-radius: 50%;
+  background-color: #4285f4;
+  color: white;
+  font-size: 1.8em;
+  z-index: 9;
+}
+
+.titl {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+.text {
+  opacity: 0.7;
+  text-align: center;
+  font-size: .9em;
+}
+
+.info {
+  position: relative;
+  background-color: #f1f1f1;
+  border-radius: 6px;
+  padding: 40px 30px 1px 30px;
+}
+
+.my-block:hover .info {
+  background-color: #4285f4;
+  color: white;
+  margin-top: -4px;
+  transition: 0.5s;
+}
+
+.my-block:hover .my-icon {
+  background-color: white;
+  color: #4285f4;
+  box-shadow: 0 4px 20px -5px rgba(66, 133, 244, 0.4);
+  top: -14px;
+  transition: 0.5s;
+}
+
+.row {
+  margin-top: 60px;
+}
+
+@media only screen and (max-width: 400px) {
+  .my-block {
+    margin: 40px 0 30px 0;
+  }
+
+  .title {
+    font-size: 2em;
+    margin:40px 0 0 0;
+  }
+
+  .subtitle {
+    font-size: 1em;
+    margin: 0 0 0 85px;
+    width: 200px;
+  }
+
+  .my-icon {
+    position: absolute;
+    top: -10px;
+    left: 160px;
+    width: 75px;
+    height: 75px;
+  }
+
+  .titl {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.1em;
+  }
+
+  .text {
+    opacity: 0.7;
+    text-align: center;
+  }
+
+  .info {
+    padding: 40px 30px 30px 30px;
+  }
+
+  .row {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+
+    <title>Stencil Component Starter</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script type="module" src="/build/dowork.esm.js"></script>
+    <script nomodule="" src="/build/dowork.js"></script>
+    <script src="https://use.fontawesome.com/6234d736d9.js"></script>
+  </head>
+  <body>
+    <my-component></my-component>
+
+    <script>
+      if ("serviceWorker" in navigator && location.protocol !== "file:") {
+        // auto-unregister service worker during dev mode
+        navigator.serviceWorker.getRegistration().then(function (registration) {
+          if (registration) {
+            registration.unregister().then(function () {
+              location.reload(true);
+            });
+          }
+        });
+      }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
+</html>
