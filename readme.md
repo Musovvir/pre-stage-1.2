@@ -14,8 +14,8 @@
 
 ##### Хедер
 
-cnt-flexy-view-viskhan-sbank-header-1_01
+- cnt-flexy-view-viskhan-sbank-header-1_01
 
 ##### Футер
 
-cnt-flexy-view-viskhan-sbank-footer-1_01
+- cnt-flexy-view-viskhan-sbank-footer-1_01
