@@ -175,7 +175,7 @@ export const forWindow = [
   {
     id: 1, url: 'flags.png',
     enter: 'Enter a name of country or currency', search: 'fa fa-search', usd: 'USD', gbp: 'GBP',
-    jpy: 'JPY', nzd: 'NZD', inr: 'INR', eur: 'EUR', pyg: 'PYG', eup: 'EUP', zar: 'ZAR',
+    jpy: 'JPY', nzd: 'NZD', inr: 'INR', eur: 'EUR', pyg: 'PYG', eup: 'EUR', zar: 'ZAR',
     text: 'United states dollars', arrow: 'fa fa-arrow-right'
   }
 ]

@@ -28,31 +28,12 @@ export class MyComponent {
   }
 
   render() {
-    /**
-     * клик по элементам компонента
-     */
-    const clicker = (item) => {
-      console.log(item);
-    };
     return (
       <div>
         {this.popupComplited ? (
           <cnt-flexy-view-viskhan-window-1_01
             payload={forWindow}
             pathToAssets={this.testPathToAssets}
-            onClickWindowInput={(item) => clicker(item)}
-            onClickWindowSearch={(item) => clicker(item)}
-            onClickWindowUSD={(item) => clicker(item)}
-            onClickWindowGBP={(item) => clicker(item)}
-            onClickWindowJPY={(item) => clicker(item)}
-            onClickWindowNZD={(item) => clicker(item)}
-            onClickWindowINR={(item) => clicker(item)}
-            onClickWindowEUR={(item) => clicker(item)}
-            onClickWindowPYG={(item) => clicker(item)}
-            onClickWindowEUP={(item) => clicker(item)}
-            onClickWindowZAR={(item) => clicker(item)}
-            onClickWindowText={(item) => clicker(item)}
-            onClickWindowCircle={(item) => clicker(item)}
             onCloseForm={() => {
               this.closeForm();
             }}

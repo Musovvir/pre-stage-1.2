@@ -5,18 +5,18 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { SSectionFourthItems, } from "./components/cnt-flexy-view-viskhan-sbank-about-1_01/res/view/cnt-flexy-view-viskhan-sbank-about/interface/common.interface";
-import { SCollaborationItems, } from "./components/cnt-flexy-view-viskhan-sbank-collaboration-1_01/res/view/cnt-flexy-view-viskhan-sbank-collaboration/interface/common.interface";
-import { SSectionSecondItems, } from "./components/cnt-flexy-view-viskhan-sbank-dowork-1_01/res/view/cnt-flexy-view-viskhan-sbank-dowork/interface/common.interface";
-import { SSectionFirstItems, } from "./components/cnt-flexy-view-viskhan-sbank-estimates-1_01/res/view/cnt-flexy-view-viskhan-sbank-estimates/interface/common.interface";
-import { SFooterItems, } from "./components/cnt-flexy-view-viskhan-sbank-footer-1_01/res/view/cnt-flexy-view-viskhan-sbank-footer/interface/common.interface";
-import { SHeaderItems, } from "./components/cnt-flexy-view-viskhan-sbank-header-1_01/res/view/cnt-flexy-view-viskhan-sbank-header/interface/common.interface";
-import { SReviewItems, } from "./components/cnt-flexy-view-viskhan-sbank-review-1_01/res/view/cnt-flexy-view-viskhan-sbank-review/interface/common.interface";
-import { SStaffingItems, } from "./components/cnt-flexy-view-viskhan-sbank-staffing-1_01/res/view/cnt-flexy-view-viskhan-sbank-staffing/interface/common.interface";
-import { SSectionThirdItems, } from "./components/cnt-flexy-view-viskhan-sbank-structure-1_01/res/view/cnt-flexy-view-viskhan-sbank-structure/interface/common.interface";
-import { SSummaryItems, } from "./components/cnt-flexy-view-viskhan-sbank-summary-1_01/res/view/cnt-flexy-view-viskhan-sbank-summary/interface/common.interface";
-import { STimelineItems, } from "./components/cnt-flexy-view-viskhan-sbank-timeline-1_01/res/view/cnt-flexy-view-viskhan-sbank-timeline/interface/common.interface";
-import { SWindowItems, } from "./components/cnt-flexy-view-viskhan-window-1_01/interface/common.interface";
+import { SSectionFourthItems, } from "./components/cnt-flexy-view-viskhan-sbank-about/res/view/cnt-flexy-view-viskhan-sbank-about/interface/common.interface";
+import { SCollaborationItems, } from "./components/cnt-flexy-view-viskhan-sbank-collaboration/res/view/cnt-flexy-view-viskhan-sbank-collaboration/interface/common.interface";
+import { SSectionSecondItems, } from "./components/cnt-flexy-view-viskhan-sbank-dowork/res/view/cnt-flexy-view-viskhan-sbank-dowork/interface/common.interface";
+import { SSectionFirstItems, } from "./components/cnt-flexy-view-viskhan-sbank-estimates/res/view/cnt-flexy-view-viskhan-sbank-estimates/interface/common.interface";
+import { SFooterItems, } from "./components/cnt-flexy-view-viskhan-sbank-footer/res/view/cnt-flexy-view-viskhan-sbank-footer/interface/common.interface";
+import { SHeaderItems, } from "./components/cnt-flexy-view-viskhan-sbank-header/res/view/cnt-flexy-view-viskhan-sbank-header/interface/common.interface";
+import { SReviewItems, } from "./components/cnt-flexy-view-viskhan-sbank-review/res/view/cnt-flexy-view-viskhan-sbank-review/interface/common.interface";
+import { SStaffingItems, } from "./components/cnt-flexy-view-viskhan-sbank-staffing/res/view/cnt-flexy-view-viskhan-sbank-staffing/interface/common.interface";
+import { SSectionThirdItems, } from "./components/cnt-flexy-view-viskhan-sbank-structure/res/view/cnt-flexy-view-viskhan-sbank-structure/interface/common.interface";
+import { SSummaryItems, } from "./components/cnt-flexy-view-viskhan-sbank-summary/res/view/cnt-flexy-view-viskhan-sbank-summary/interface/common.interface";
+import { STimelineItems, } from "./components/cnt-flexy-view-viskhan-sbank-timeline/res/view/cnt-flexy-view-viskhan-sbank-timeline/interface/common.interface";
+import { SWindowItems, } from "./components/cnt-flexy-view-viskhan-window/res/view/interface/common.interface";
 export namespace Components {
     interface CntFlexyViewViskhanSbankAbout {
         /**
@@ -206,11 +206,25 @@ export namespace Components {
          */
         "payload": any;
     }
+    interface CntFlexyViewViskhanWindow {
+        /**
+          * Интерфейс для Window
+         */
+        "Window": SWindowItems[];
+        "pathToAssets": string;
+        /**
+          * Данные для Window
+         */
+        "payload": any;
+    }
     interface CntFlexyViewViskhanWindow1_01 {
         /**
           * Интерфейс для Window
          */
         "Window": SWindowItems[];
+        /**
+          * префикс для изображений
+         */
         "pathToAssets": string;
         /**
           * Данные для Window
@@ -353,6 +367,12 @@ declare global {
         prototype: HTMLCntFlexyViewViskhanSbankTimeline1_01Element;
         new (): HTMLCntFlexyViewViskhanSbankTimeline1_01Element;
     };
+    interface HTMLCntFlexyViewViskhanWindowElement extends Components.CntFlexyViewViskhanWindow, HTMLStencilElement {
+    }
+    var HTMLCntFlexyViewViskhanWindowElement: {
+        prototype: HTMLCntFlexyViewViskhanWindowElement;
+        new (): HTMLCntFlexyViewViskhanWindowElement;
+    };
     interface HTMLCntFlexyViewViskhanWindow1_01Element extends Components.CntFlexyViewViskhanWindow1_01, HTMLStencilElement {
     }
     var HTMLCntFlexyViewViskhanWindow1_01Element: {
@@ -388,6 +408,7 @@ declare global {
         "cnt-flexy-view-viskhan-sbank-summary-1_01": HTMLCntFlexyViewViskhanSbankSummary1_01Element;
         "cnt-flexy-view-viskhan-sbank-timeline": HTMLCntFlexyViewViskhanSbankTimelineElement;
         "cnt-flexy-view-viskhan-sbank-timeline-1_01": HTMLCntFlexyViewViskhanSbankTimeline1_01Element;
+        "cnt-flexy-view-viskhan-window": HTMLCntFlexyViewViskhanWindowElement;
         "cnt-flexy-view-viskhan-window-1_01": HTMLCntFlexyViewViskhanWindow1_01Element;
         "my-component": HTMLMyComponentElement;
     }
@@ -741,7 +762,7 @@ declare namespace LocalJSX {
          */
         "payload"?: any;
     }
-    interface CntFlexyViewViskhanWindow1_01 {
+    interface CntFlexyViewViskhanWindow {
         /**
           * Интерфейс для Window
          */
@@ -808,6 +829,24 @@ declare namespace LocalJSX {
          */
         "payload"?: any;
     }
+    interface CntFlexyViewViskhanWindow1_01 {
+        /**
+          * Интерфейс для Window
+         */
+        "Window"?: SWindowItems[];
+        /**
+          * Закрытие модального окна формы
+         */
+        "onCloseForm"?: (event: CustomEvent<any>) => void;
+        /**
+          * префикс для изображений
+         */
+        "pathToAssets"?: string;
+        /**
+          * Данные для Window
+         */
+        "payload"?: any;
+    }
     interface MyComponent {
     }
     interface IntrinsicElements {
@@ -833,6 +872,7 @@ declare namespace LocalJSX {
         "cnt-flexy-view-viskhan-sbank-summary-1_01": CntFlexyViewViskhanSbankSummary1_01;
         "cnt-flexy-view-viskhan-sbank-timeline": CntFlexyViewViskhanSbankTimeline;
         "cnt-flexy-view-viskhan-sbank-timeline-1_01": CntFlexyViewViskhanSbankTimeline1_01;
+        "cnt-flexy-view-viskhan-window": CntFlexyViewViskhanWindow;
         "cnt-flexy-view-viskhan-window-1_01": CntFlexyViewViskhanWindow1_01;
         "my-component": MyComponent;
     }
@@ -863,6 +903,7 @@ declare module "@stencil/core" {
             "cnt-flexy-view-viskhan-sbank-summary-1_01": LocalJSX.CntFlexyViewViskhanSbankSummary1_01 & JSXBase.HTMLAttributes<HTMLCntFlexyViewViskhanSbankSummary1_01Element>;
             "cnt-flexy-view-viskhan-sbank-timeline": LocalJSX.CntFlexyViewViskhanSbankTimeline & JSXBase.HTMLAttributes<HTMLCntFlexyViewViskhanSbankTimelineElement>;
             "cnt-flexy-view-viskhan-sbank-timeline-1_01": LocalJSX.CntFlexyViewViskhanSbankTimeline1_01 & JSXBase.HTMLAttributes<HTMLCntFlexyViewViskhanSbankTimeline1_01Element>;
+            "cnt-flexy-view-viskhan-window": LocalJSX.CntFlexyViewViskhanWindow & JSXBase.HTMLAttributes<HTMLCntFlexyViewViskhanWindowElement>;
             "cnt-flexy-view-viskhan-window-1_01": LocalJSX.CntFlexyViewViskhanWindow1_01 & JSXBase.HTMLAttributes<HTMLCntFlexyViewViskhanWindow1_01Element>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
