@@ -5,7 +5,7 @@
 
 .modaleWindow {
   width: 650px;
-  height: 415px;
+  height: 420px;
   background-color: #ffffff;
   border-radius: 20px;
   position: fixed;
@@ -55,7 +55,7 @@
 }
 
 hr {
-  margin-top: -10px;
+  margin-top: 0;
 }
 
 .flag {
@@ -180,21 +180,21 @@ hr {
 
 .my-line {
   display: flex;
-  margin: 25px 0 0 30px;
+  margin: 27px 0 0 22px;
 }
 
 .item-line-blue {
   width: 23px;
-  height: 3px;
-  border-radius: 30%;
+  height: 4px;
+  border-radius: 25%;
   background-color: #6666de;
   margin-right: 15px;
 }
 
 .item-line {
   width: 23px;
-  height: 3px;
-  border-radius: 30%;
+  height: 4px;
+  border-radius: 25%;
   background-color: #dee2e6;
   margin-right: 15px;
 }
